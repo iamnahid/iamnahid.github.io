@@ -647,6 +647,28 @@ section {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
+/* CUSTOM CSS */
+.company-links{
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #04c4ff;
+  text-shadow: 0 0 10px #04c4ff;
+}
+.company-links:hover, .company-links:focus{
+  text-decoration: underline;
+  color: #04c4ff;
+  padding-left: 15px;
+  border-left: 4px solid #04c4ff;
+  text-decoration: none;
+  transition: 1s ease-in-out;
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -ms-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+}
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
