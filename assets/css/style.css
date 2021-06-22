@@ -465,26 +465,70 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+/* Custom CSS */
+#about-table{
+  border: 2px dashed #40ea65;
+  background: url('../img/about.png');
+  background-repeat: repeat;
+  background-size: inherit;
+  background-attachment: scroll;
+}
+.about-data-mob{
+  display: none;
+}
+@media (max-width: 768px) {
+
+  .about-data{
+    display: none;
+  }
+  .about-data-mob{
+    display: block;
+  }
+
+}
+.about-data, .about-data-mob{
+  width: 100vw;
+  height: 100%;
+}
+.about-data, .about-data th, .about-data td , .about-data-mob, .about-data-mob th, .about-data-mob td {
+  border: 1px dashed #40ea65;
+  border-collapse: collapse;
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 1px;
+}
+.about-data th, .about-data td , .about-data-mob th, .about-data-mob td {
+  padding: 10px;
+  text-align: center;    
+}
+.about-data-mob th,.about-data th{
+  color: #40ea66;
+  /* text-transform: uppercase; */
+}
+/* Custom CSS END */
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
 }
 .name{
   font-size: 2.5em;
-  position: relative;font-family: 'Quicksand', sans-serif;
+  position: relative;
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 1px;
   padding: 0;
   margin: 0 0 15px 0;
-  /* letter-spacing: 5px; */
+  letter-spacing: 5px;
+  font-weight: 600;
   color: #ffffff;
   text-shadow: none;
 }
 .des{
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-weight: normal; 
-  font-size: 0.9em; 
-  font-family: 'Quicksand', sans-serif;
-  color: #ffffff;
+  /* text-transform: uppercase; */
+  font-weight: 600; 
+  font-size: 1em; 
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 3px;
+  color: #40ea66;
+  text-shadow: 0 0 40px #40ea65;
 }
 
 .about .content ul {
@@ -648,6 +692,12 @@ section {
 # Resume
 --------------------------------------------------------------*/
 /* CUSTOM CSS */
+.personality{
+  color: #40ea65;
+  font-weight: 600;
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 1px;
+}
 .company-links{
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -658,17 +708,15 @@ section {
   text-shadow: 0 0 10px #04c4ff;
 }
 .company-links:hover, .company-links:focus{
-  text-decoration: underline;
   color: #04c4ff;
-  padding-left: 15px;
-  border-left: 4px solid #04c4ff;
-  text-decoration: none;
+  text-decoration: underline;
   transition: 1s ease-in-out;
   -webkit-transition: 1s ease-in-out;
   -moz-transition: 1s ease-in-out;
   -ms-transition: 1s ease-in-out;
   -o-transition: 1s ease-in-out;
 }
+/* END CUSTOM CSS */
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;

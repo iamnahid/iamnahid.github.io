@@ -15,7 +15,10 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -48,7 +51,7 @@
         <li><a href="#about"><i class="bx bx-user"></i> <span>Intro</span></a></li>
         <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Who</span></a></li>
         <li><a href="#portfolio"><i class="bx bx-book-content"></i> <span>Work</span></a></li>
-        <!-- <li><a href="#web"><i class='bx bxs-user-account'></i> <span>Web Profiles</span></a></li> -->
+        <li><a href="#web"><i class='bx bxs-user-account'></i> <span>Web Profiles</span></a></li>
         <li><a href="#services"><i class="bx bx-server"></i> <span>Services</span></a></li>
         <li><a href="#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
       </ul>
@@ -85,32 +88,65 @@
           <br><br>
         </div>
 
-        <div class="row">
-          <div class="col-lg-4">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content">
+        <div class="row d-flex p-4 justify-content-center align-content-center">
+          <div class="col-lg-10 justify-content-center text-center p-4" id="about-table">            
             <h1 class="name">Md. Nahidul Islam</h1>
             <h5 class="des">Software Engineer</h5>
-            <div class="row mt-5">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 5 December</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Website:</strong><a class="webLink" href="https://iamnahid.github.io"> iamnahid.github.io</a> </li>
-                  <li><i class="icofont-rounded-right"></i> <strong>City:</strong> Dhaka, Bangladesh</li>
-                </ul>
+            <div class="row mt-3 justify-content-center text-center align-content-center" >
+              <div class="col-sm-10 col-md-6 col-lg-4 justify-content-center align-content-center p-2 mb-3">            
+                <img src="assets/img/about.jpg" class="img-fluid rounded-0 p-2" id="about-table" alt="iamnahid, Md. Nahidul Islam">
               </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> Bachelor</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Mail:</strong> iamnahid.n9@gmail.com</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                </ul>
-              </div>
+              <table class="about-data">
+                <tr>
+                  <th>Wish Me On</th>
+                  <th>Degree</th>
+                  <th>Freelance</th>
+                  <th>Address</th>
+                  <th>Mail</th>
+                </tr>
+                <tr>
+                  <td>5 December</td>
+                  <td>Bachelor's</td>
+                  <td>Available</td>
+                  <td>Dhaka, Bangladesh</td>
+                  <td>iamnahid.n9@gmail.com</td>
+                </tr>
+                <tr>
+                  <td colspan="5" class="text-justify pr-2 pl-2">
+                    From my childhood, I had deep curiousity and interest for Computer Science, After completing HSC, I studied Bachelor's in CSSE from AIUB. This is how, I entered the path of my passion. Apart from my professional life, I love music and travelling a lot.
+                  </td>
+                </tr>
+              </table> 
+              <table class="about-data-mob">
+                <tr>
+                  <th>Wish Me On</th>
+                  <th>Degree</th>
+                </tr>
+                <tr>
+                  <td>5 December</td>
+                  <td>Bachelor's</td>
+                </tr>
+                <tr>                  
+                  <th>Freelance</th>
+                  <th>Address</th>
+                </tr>
+                <tr>
+                  <td>Available</td>
+                  <td>Dhaka, Bangladesh</td>
+                </tr>
+                <tr>                  
+                  <th colspan="2">Mail</th>
+                </tr>
+                <tr>
+                  <td colspan="2">iamnahid.n9@gmail.com</td>
+                </tr>
+                <tr>
+                  <td colspan="5" class="text-justify p-3">
+                    From my childhood, I had deep curiousity and interest for Computer Science, After completing HSC, I studied Bachelor's in CSSE from AIUB. This is how, I entered the path of my passion. Apart from my professional life, I love music and travelling a lot.
+                  </td>
+                </tr>
+              </table>              
             </div>
-            <p class="bio">
-              From my childhood, I had deep curiousity and interest for Computer Science, After completing HSC, I studied Bachelor's in CSSE from AIUB. This is how, I entered the path of my passion. Apart from my professional life, I love music and travelling a lot. I have travelled most of the places within my country. 
-            </p>
           </div>
         </div>
 
@@ -349,6 +385,21 @@
               <h4>Wordpress Development & Advanced Web Development </h4>
               <p><em>Organization: Codeman BD</em></p>
             </div>
+            <h3 class="resume-title">Personality Test</h3>
+            <div class="resume-item" data-aos="slide-up" data-aos-duration="1000">
+              <h4>16Personalities</h4>
+              <p><em class="company-links text-white text-decoration-none">Quick Review</em></p>
+              <h4 class="text-white">TYPE: <span class="pl-2 pr-2 personality">Assertive Advocate</span></h4>
+              <h4 class="text-white">ROLE: <span class="pl-2 pr-2 personality">Diplomat</span></h4>
+              <ul class="ml-5 mt-4" style="list-style: square;">
+                <li><p>Mind: <span class="pl-2 pr-2 personality">54%</span> : <span class="pl-2 pr-2 personality">INTROVERTED</span></p></li>
+                <li><p>Energy: <span class="pl-2 pr-2 personality">62%</span> : <span class="pl-2 pr-2 personality">INTUITIVE</span></p></li>
+                <li><p>Nature: <span class="pl-2 pr-2 personality">84%</span> : <span class="pl-2 pr-2 personality">FEELING</span></p></li>
+                <li><p>Tactics: <span class="pl-2 pr-2 personality">78%</span> : <span class="pl-2 pr-2 personality">JUDGING</span></p></li>
+                <li><p>Identity: <span class="pl-2 pr-2 personality">67%</span> : <span class="pl-2 pr-2 personality">ASSERTIVE</span></p></li>
+              </ul>              
+              <p><em><i class="icofont-rounded-right company-links text-decoration-none"></i><a class="pl-3 company-links" href="https://www.16personalities.com/profiles/c80d6f7d600bb">More Details</a></em></p>
+            </div>
           </div>
           <div class="col-lg-6">
             <h3 class="resume-title">Professional Experience</h3>
@@ -356,12 +407,11 @@
               <h4>Software Engineer & Sr. IT Executive</h4>
               <h5>2021 - Present</h5>
               <p><em> <a class="company-links" href="https://taralimited.co">TARA Limited</a> </em></p>
-              <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-              </ul>
+              <p>
+                “Any software project must have a technical leader, who is responsible for all technical decisions made by the team and have enough authority to make them. Responsibility and authority are two mandatory components that must be present in order to make it possible to call such a person an architect.”
+― Yegor Bugayenko
+
+              </p>
             </div>
             <div class="resume-item" data-aos="slide-up" data-aos-duration="1000">
               <h4>Jr. Web Developer & Executive IT</h4>
@@ -576,7 +626,7 @@
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio section-bg">
-      <div class="container" data-aos="flip-down" data-aos-duration="1500" data-aos-offset="200">
+      <div class="container" data-aos="fade-down-right" data-aos-duration="1500" data-aos-offset="200">
 
         <div class="section-title">
           <h2>Portfolio</h2>
@@ -729,14 +779,14 @@
     </section><!-- End Portfolio Section -->
 
     <!-- ======= Portfolio Section ======= -->
-    <!-- <section id="web" class="web section-bg">
-      <div class="container" data-aos="flip-down" data-aos-duration="1500" data-aos-offset="200">
 
+    <section id="web" class="web section-bg">
+      <div class="container" data-aos="fade-up-left" data-aos-duration="1500" data-aos-offset="200">
         <div class="section-title">
           <h2>Web Profiles</h2>
         </div>
 
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
             <ul id="web-flters">
               <li data-filter="*" class="filter-active">All</li>
@@ -745,25 +795,46 @@
               <li data-filter=".filter-Git">Github</li>
             </ul>
           </div>
-        </div>
+        </div> -->
 
         <div class="row web-container" data-aos="fade-up" data-aos-delay="200">
-
           <div class="col-lg-4 col-md-6 web-item filter-be">
             <div class="web-wrap">
-              <img src="assets/img/web/behance.png" class="img-fluid" alt="">
+              <img src="assets/img/web/behance.png" class="img-fluid" alt="iamnahid, Behance">
               <div class="web-info">
                 <p>My Behance</p>
                 <div class="web-links">
-                  <a href="http://www.pinterest.com/iamnahid9/" data-gall="portfolioGallery" data-vbtype="iframe" class="venobox" title="Web Details"><i class="bx bx-link"></i></a>
+                  <a href="https://www.behance.net/iamnahid"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
-          
+          <div class="col-lg-4 col-md-6 web-item filter-pin">
+            <div class="web-wrap">
+              <img src="assets/img/web/pinterest.png" class="img-fluid" alt="iamnahid, Pinterest">
+              <div class="web-info">
+                <p>My Pinterest</p>
+                <div class="web-links">
+                  <a href="https://www.pinterest.com/iamnahid9/"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 web-item filter-Git">
+            <div class="web-wrap">
+              <img src="assets/img/web/github.png" class="img-fluid" alt="iamnahid, Github">
+              <div class="web-info">
+                <p>My Github</p>
+                <div class="web-links">
+                  <a href="https://www.pinterest.com/iamnahid9/"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>          
         </div>
       </div>
-    </section> -->
+    </section>
+
     <!-- End Portfolio Section -->
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
@@ -774,9 +845,9 @@
           <p>If you’re thinking about starting an IT business, one of the essential steps is specifying your services. Here you can find some of my offers</p>
         </div>
 
-        <div class="row">
+        <div class="row d-flex justify-content-center align-content-center">
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-4 col-md-6 d-flex justify-content-center align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -789,7 +860,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="col-lg-4 col-md-6 d-flex justify-content-center align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box iconbox-orange ">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -802,7 +873,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="col-lg-4 col-md-6 d-flex justify-content-center align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box iconbox-pink">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
